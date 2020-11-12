@@ -1,5 +1,5 @@
 import { Button } from '@chakra-ui/core';
-import React from 'react';
+import React, { memo } from 'react';
 // import { SearchIcon } from '@chakra-ui/icons';
 
 type LoginProps = {
@@ -17,4 +17,4 @@ const LoginButton: React.FC<LoginProps> = ({ onClick }) => {
   );
 };
 
-export default LoginButton;
+export default memo(LoginButton);

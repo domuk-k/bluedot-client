@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Router from './router';
+import Router from './pages/Router';
 import { CSSReset, ChakraProvider } from '@chakra-ui/core';
-import customTheme from './utils/customTheme';
+import customTheme from './theme/customTheme';
 
 export const App: React.FC = () => (
   <ChakraProvider theme={customTheme} resetCSS={true}>

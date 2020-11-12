@@ -5,13 +5,7 @@ interface Props {}
 
 const PostsList = (props: Props) => {
   return (
-    <Box
-      as="section"
-      width="90%"
-      m="0 auto"
-      p="20px 0"
-      bg="green.100"
-    >
+    <Box as="section" border="2px solid crimson" w="90vw">
       <h2>장르별 아티스트 게시물</h2>
       <List>
         <ListItem>전체</ListItem>

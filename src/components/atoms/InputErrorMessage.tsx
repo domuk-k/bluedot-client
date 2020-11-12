@@ -1,5 +1,5 @@
+import React, { memo } from 'react';
 import { Text } from '@chakra-ui/core';
-import React from 'react';
 
 const InputErrorMessage: React.FC = ({ children }) => {
   return (

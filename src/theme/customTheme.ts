@@ -1,17 +1,21 @@
 import { theme } from '@chakra-ui/core';
 
+// add an alias for object responsive prop
+
 const customTheme = {
   ...theme,
   styles: {
     ...theme.styles,
     global: {
+      body: {
+        color: '#181818',
+      },
       h2: {
         fontSize: '1.4rem',
         fontWeight: 500,
       },
     },
   },
-  breakpoints: ['30em', '48em', '62em', '80em'],
   // fonts: {
   //   body: "system-ui, sans-serif",
   //   heading: "Georgia, serif",

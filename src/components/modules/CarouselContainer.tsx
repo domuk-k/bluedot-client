@@ -3,6 +3,7 @@ import {
   Center,
   List,
   ListItem,
+  Text,
 } from '@chakra-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -11,17 +12,11 @@ interface Props {}
 
 const Carousel = (props: Props) => {
   return (
-    <Box
-      as="section"
-      width="90%"
-      m="0 auto"
-      p="20px 0"
-      bg="cyan.100"
-    >
-      <Box>
-        <Box as="h2" d="inline-block" mr="1rem">
+    <Box as="section" w="90vw" border="2px solid crimson">
+      <Box as="h2">
+        <Text d="inline-block" mr="1rem">
           아티스트 소개
-        </Box>
+        </Text>
         <Link to="/artists" style={{ fontSize: '.5rem' }}>
           전체 보기
         </Link>
@@ -29,8 +24,6 @@ const Carousel = (props: Props) => {
       <List
         display="flex"
         wrap="nowrap"
-        w="100%"
-        h="100%"
         border="1px solid grey"
         overflowX="auto"
         align="center"
@@ -45,9 +38,7 @@ const Carousel = (props: Props) => {
               h="80px"
               key={i}
             >
-              <Center w="100px" h="100%" bg="blue.100">
-                {v}
-              </Center>
+              <Center bg="blue.100">{v}</Center>
             </ListItem>
           ))}
       </List>

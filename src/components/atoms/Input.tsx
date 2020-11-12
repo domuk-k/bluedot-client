@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import {
   Input as ChakraInput,
   InputProps,
@@ -12,4 +12,4 @@ const Input = (props: InputProps) => {
   );
 };
 
-export default Input;
+export default memo(Input);

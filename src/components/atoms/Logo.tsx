@@ -1,5 +1,5 @@
 import { Button } from '@chakra-ui/core';
-import React from 'react';
+import React, { memo } from 'react';
 
 interface Props {}
 
@@ -11,4 +11,4 @@ const Logo = (props: Props) => {
   );
 };
 
-export default Logo;
+export default memo(Logo);
