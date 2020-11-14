@@ -10,17 +10,9 @@ const customTheme = {
       body: {
         color: '#181818',
       },
-      h2: {
-        fontSize: '1.4rem',
-        fontWeight: 500,
-      },
+      h2: {},
     },
   },
-  // fonts: {
-  //   body: "system-ui, sans-serif",
-  //   heading: "Georgia, serif",
-  //   mono: "Menlo, monospace"
-  // },
   colors: {
     ...theme.colors,
     primary: {
@@ -40,6 +32,7 @@ const customTheme = {
       warn: '#ff4747',
       cta: '#0000FF',
       subtle: '#f1f1f1',
+      subText: '#aaa',
     },
   },
 };
