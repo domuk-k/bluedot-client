@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bluedot-client/static/css/main.3a8b1b04.chunk.css",
+    "main.js": "/bluedot-client/static/js/main.eb6a008f.chunk.js",
+    "main.js.map": "/bluedot-client/static/js/main.eb6a008f.chunk.js.map",
+    "runtime-main.js": "/bluedot-client/static/js/runtime-main.ba648e19.js",
+    "runtime-main.js.map": "/bluedot-client/static/js/runtime-main.ba648e19.js.map",
+    "static/css/2.f9715a6c.chunk.css": "/bluedot-client/static/css/2.f9715a6c.chunk.css",
+    "static/js/2.ac6c52ae.chunk.js": "/bluedot-client/static/js/2.ac6c52ae.chunk.js",
+    "static/js/2.ac6c52ae.chunk.js.map": "/bluedot-client/static/js/2.ac6c52ae.chunk.js.map",
+    "static/js/3.36e1f32c.chunk.js": "/bluedot-client/static/js/3.36e1f32c.chunk.js",
+    "static/js/3.36e1f32c.chunk.js.map": "/bluedot-client/static/js/3.36e1f32c.chunk.js.map",
+    "index.html": "/bluedot-client/index.html",
+    "static/css/2.f9715a6c.chunk.css.map": "/bluedot-client/static/css/2.f9715a6c.chunk.css.map",
+    "static/css/main.3a8b1b04.chunk.css.map": "/bluedot-client/static/css/main.3a8b1b04.chunk.css.map",
+    "static/js/2.ac6c52ae.chunk.js.LICENSE.txt": "/bluedot-client/static/js/2.ac6c52ae.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/bluedot-client/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba648e19.js",
+    "static/css/2.f9715a6c.chunk.css",
+    "static/js/2.ac6c52ae.chunk.js",
+    "static/css/main.3a8b1b04.chunk.css",
+    "static/js/main.eb6a008f.chunk.js"
+  ]
+}
