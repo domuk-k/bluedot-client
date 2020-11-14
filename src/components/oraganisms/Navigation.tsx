@@ -3,9 +3,7 @@ import {
   Flex,
   Modal,
   ModalOverlay,
-  Text,
   useDisclosure,
-  useMediaQuery,
 } from '@chakra-ui/core';
 import React, {
   ReactElement,

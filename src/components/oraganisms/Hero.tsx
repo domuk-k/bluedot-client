@@ -1,11 +1,6 @@
-import {
-  AspectRatio,
-  Box,
-  Image,
-  useMediaQuery,
-} from '@chakra-ui/core';
-import Slider from 'react-slick';
 import React from 'react';
+import { Box, List } from '@chakra-ui/core';
+import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -19,7 +14,7 @@ const Hero: React.FC = () => {
 
   return (
     <Box as="section">
-      <Box
+      <List
         as={Slider}
         w="100vw"
         h="56.2vw"
@@ -28,8 +23,10 @@ const Hero: React.FC = () => {
         bg="rgba(255, 208, 122, 0.323)"
       >
         <Box
+          as="li"
+          listStyleType="none"
           bg="url(https://static.wanted.co.kr/images/newintro/main_kr_mobile.jpg)"
-          backgroundSize="contain"
+          backgroundSize="cover"
           bgPos="50%"
           bgRepeat="no-repeat"
           w="100vw"
@@ -56,7 +53,7 @@ const Hero: React.FC = () => {
         </Box>
         <Box
           bg="url(https://t1.daumcdn.net/brunch/service/user/7J2z/image/01cda2WH_NhJdq8JCCv4l5LlD_Y.jpg)"
-          backgroundSize="contain"
+          backgroundSize="cover"
           bgPos="50%"
           bgRepeat="no-repeat"
           w="100vw"
@@ -81,7 +78,7 @@ const Hero: React.FC = () => {
             </Box>
           </Box>
         </Box>
-      </Box>
+      </List>
       {/* </AspectRatio> */}
     </Box>
   );

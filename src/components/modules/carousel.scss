@@ -1,0 +1,85 @@
+.user-carousel {
+  .carousel-item:hover {
+    width: 120px !important;
+  }
+  .slick-slider {
+    padding: 0;
+  }
+  .slick-track {
+    height: 124px;
+    overflow: hidden;
+  }
+  .slick-dots {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+
+    display: block;
+    text-align: right;
+
+    list-style: none;
+    li {
+      margin: 0;
+      /* dot 간격 */
+      button {
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        &::before {
+          background-color: dimgray;
+          width: 8px;
+          height: 8px;
+          border-radius: 50px;
+          color: transparent;
+        }
+      }
+      &.slick-active button:before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-85%);
+        width: 16px;
+        background-color: #0000f1;
+        font-size: 1.2rem;
+        color: transparent;
+      }
+    }
+  }
+  .slick-arrow {
+    height: 74%;
+    top: 36%;
+    &::before {
+      display: block;
+    }
+    &.slick-prev {
+      background-image: linear-gradient(
+        to right,
+        white,
+        transparent
+      );
+      z-index: 3;
+      left: 0;
+      &::before {
+        content: '<';
+        color: dimgray;
+        transform: translate(-100%, 0);
+      }
+    }
+    &.slick-next {
+      background-image: linear-gradient(
+        to left,
+        white,
+        transparent
+      );
+      z-index: 3;
+      right: 0;
+      &::before {
+        content: '>';
+        color: dimgray;
+        transform: translate(100%, 0);
+      }
+    }
+  }
+}

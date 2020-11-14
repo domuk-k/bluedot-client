@@ -1,10 +1,8 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import { Box } from '@chakra-ui/core';
 import Navigation from '../components/oraganisms/Navigation';
-import MainContents from '../components/oraganisms/MainContents';
 import Hero from '../components/oraganisms/Hero';
-import CarouselContainer from '../components/modules/CarouselContainer';
+import UserCarousel from '../components/modules/UserCarousel';
 import PostsList from '../components/modules/PostsList';
 
 const Home = () => {
@@ -12,7 +10,7 @@ const Home = () => {
     <Layout>
       <Navigation />
       <Hero />
-      <CarouselContainer />
+      <UserCarousel />
       <PostsList />
     </Layout>
   );

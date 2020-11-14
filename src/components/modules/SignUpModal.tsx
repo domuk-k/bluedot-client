@@ -52,8 +52,6 @@ const SignUpModal: React.FC<ISignInModal> = (props) => {
         <Formik
           initialValues={initialValues}
           onSubmit={(values, { setSubmitting }) => {
-            console.log('??');
-
             setTimeout(() => {
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
