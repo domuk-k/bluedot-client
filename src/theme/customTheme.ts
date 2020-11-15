@@ -10,7 +10,9 @@ const customTheme = {
       body: {
         color: '#181818',
       },
-      h2: {},
+      h2: {
+        fontSize: '2rem',
+      },
     },
   },
   colors: {

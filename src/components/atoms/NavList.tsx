@@ -22,6 +22,9 @@ const NavList = (props: Props) => {
       <MenuListItems>
         <Link to="/following">팔로우</Link>
       </MenuListItems>
+      <MenuListItems>
+        <Link to="/profile">프로필</Link>
+      </MenuListItems>
     </UnorderedList>
   );
 };

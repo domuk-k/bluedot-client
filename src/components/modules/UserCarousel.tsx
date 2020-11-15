@@ -1,10 +1,4 @@
-import {
-  Box,
-  Center,
-  List,
-  Text,
-  useMediaQuery,
-} from '@chakra-ui/core';
+import { Box, List, Text } from '@chakra-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
