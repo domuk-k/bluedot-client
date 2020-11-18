@@ -22,8 +22,8 @@ const SocialLoginButton /*: React.FC<SocialButtonProps> */ = ({
         color="dimgrey"
         fontWeight="semiregular"
         fontSize=".9rem"
-        _hover={{ background: 'custom.subtle' }}
-        _active={{ background: 'custom.subtle' }}
+        _hover={{ background: 'custom.grey.100' }}
+        _active={{ background: 'custom.grey.100' }}
       >
         <Box
           as={socialLogo}

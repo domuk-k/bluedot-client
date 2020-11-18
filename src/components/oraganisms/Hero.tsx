@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             bottom="20%"
             left="60%"
             w="35vw"
-            bg="custom.subtle"
+            bg="custom.grey.100"
           >
             <Box as="h3" fontSize="1.6rem">
               닷비디오
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
             bottom="20%"
             left="60%"
             w="35vw"
-            bg="custom.subtle"
+            bg="custom.grey.100"
           >
             <Box as="h3" fontSize="1.6rem">
               닷비디오

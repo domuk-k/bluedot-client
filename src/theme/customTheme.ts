@@ -17,24 +17,24 @@ const customTheme = {
   },
   colors: {
     ...theme.colors,
-    primary: {
-      100: '#CFD1FD',
-      200: '#A7ABFB',
-      300: '#8388F9',
-      400: '#6268F8',
-      500: '#444BF7',
-      600: '#262EF6',
-      700: '#0B14F5',
-      800: '#0911DD',
-      900: '#080FC7',
-    },
-    basicBlack: '#181818',
+
+    fontBlack: '#181818',
 
     custom: {
-      warn: '#ff4747',
-      cta: '#0000FF',
-      subtle: '#f1f1f1',
+      paleLilac: '#efefff',
+      sunflowerYellow: '#ffd200',
+      warn: '#ff4747', //coral
+      primary: '#0000FF',
       subText: '#aaa',
+      grey: {
+        100: '#f0f0f0',
+        200: '#e2e2e2',
+        300: '#b2b2b2',
+        400: '#8d8d8d',
+        500: '#565656',
+        600: '#303030',
+        700: '#000000',
+      },
     },
   },
 };
