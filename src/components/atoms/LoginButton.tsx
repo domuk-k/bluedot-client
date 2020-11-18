@@ -1,4 +1,5 @@
 import { Button } from '@chakra-ui/core';
+import { SearchIcon } from '@chakra-ui/icons';
 import React, { memo } from 'react';
 // import { SearchIcon } from '@chakra-ui/icons';
 
@@ -9,8 +10,8 @@ type LoginProps = {
 const LoginButton: React.FC<LoginProps> = ({ onClick }) => {
   return (
     <>
-      {/* <SearchIcon /> */}
-      <Button bg="primary.700" onClick={onClick}>
+      <SearchIcon mr="9px" />
+      <Button bg="primary" onClick={onClick}>
         회원가입/로긴
       </Button>
     </>

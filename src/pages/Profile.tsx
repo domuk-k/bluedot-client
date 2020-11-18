@@ -52,7 +52,7 @@ const Profile = (props: Props) => {
                 <Box w="100%" pos="relative">
                   <Flex direction="column" h="100%">
                     <Text>데이미언 루이스</Text>
-                    <Text color="custom.subText">
+                    <Text color="subText">
                       싱어송라이터, 시인
                     </Text>
                     <HStack>

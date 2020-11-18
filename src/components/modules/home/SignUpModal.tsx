@@ -15,9 +15,9 @@ import {
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { Field, Form, Formik } from 'formik';
 import React from 'react';
-import Input from '../atoms/Input';
-import sigupSchema from '../../utils/sigupSchema';
-import InputErrorMessage from '../atoms/InputErrorMessage';
+import Input from '../../atoms/Input';
+import sigupSchema from '../../../utils/sigupSchema';
+import InputErrorMessage from '../../atoms/InputErrorMessage';
 
 interface ISignInModal {
   setModalMode: React.Dispatch<React.SetStateAction<any>>;
@@ -84,7 +84,7 @@ const SignUpModal: React.FC<ISignInModal> = (props) => {
                 id="name"
                 value={values.name}
                 border="1px lightgrey solid"
-                focusBorderColor="primary.800"
+                focusBorderColor="primary"
               />
               {errors.name && touched.name && (
                 <InputErrorMessage children={errors.name} />
@@ -102,7 +102,7 @@ const SignUpModal: React.FC<ISignInModal> = (props) => {
                   pr="4.5rem"
                   placeholder="Enter password"
                   border="1px lightgrey solid"
-                  focusBorderColor="primary.800"
+                  focusBorderColor="primary"
                   value={values.password}
                 />
 
@@ -168,13 +168,13 @@ const SignUpModal: React.FC<ISignInModal> = (props) => {
                 <Button
                   type="submit"
                   w="100%"
-                  bg="custom.cta"
+                  bg="primary"
                   color="white"
                   // isDisabled={
                   //   isSubmitting || !!errors.email
                   // }
                   _disabled={{ background: 'lightgrey' }}
-                  _hover={{ background: 'primary.400' }}
+                  _hover={{ background: 'primary' }}
                 >
                   가입하기
                 </Button>

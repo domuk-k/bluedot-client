@@ -14,8 +14,8 @@ import { Redirect } from 'react-router-dom';
 import LoginButton from '../atoms/LoginButton';
 import Logo from '../atoms/Logo';
 import NavList from '../atoms/NavList';
-import MailCheckModal from '../modules/MailCheckModal';
-import SignUpModal from '../modules/SignUpModal';
+import MailCheckModal from '../modules/home/MailCheckModal';
+import SignUpModal from '../modules/home/SignUpModal';
 
 enum ModalTypes {
   mailCheck,
@@ -27,6 +27,7 @@ export default function Navigation(): ReactElement {
   const [modal, setModalMode] = useState(
     ModalTypes['mailCheck']
   );
+
   const signInAndUp = useCallback(() => {
     setModalMode(0);
     onOpen();
@@ -68,7 +69,7 @@ export default function Navigation(): ReactElement {
         className="nav-container"
         align="center"
         justify="space-between"
-        w={['90vw', '96vw']}
+        w="90vw"
         m="auto"
       >
         <Logo />
