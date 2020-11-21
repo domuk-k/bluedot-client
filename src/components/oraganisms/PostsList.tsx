@@ -1,14 +1,8 @@
 import {
-  Avatar,
   Box,
   Divider,
-  Flex,
   HStack,
-  Image,
-  List,
-  ListItem,
   SimpleGrid,
-  Text,
 } from '@chakra-ui/core';
 import React, { useState } from 'react';
 import PostTabButton from '../atoms/PostTabButton';

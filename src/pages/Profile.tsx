@@ -5,22 +5,16 @@ import {
   Button,
   Container,
   Flex,
-  Heading,
   HStack,
   Image,
   ListItem,
   SimpleGrid,
-  Stack,
-  StackDivider,
   Text,
 } from '@chakra-ui/core';
 import React, { useState } from 'react';
-import { isForStatement } from 'typescript';
 import Navigation from '../components/oraganisms/Navigation';
 
-interface Props {}
-
-const Profile = (props: Props) => {
+const Profile: React.FC = () => {
   const [auth, setAuth] = useState(true);
   return (
     <>
