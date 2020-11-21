@@ -5,22 +5,16 @@ import {
   Button,
   Container,
   Flex,
-  Heading,
   HStack,
   Image,
   ListItem,
   SimpleGrid,
-  Stack,
-  StackDivider,
   Text,
 } from '@chakra-ui/core';
 import React, { useState } from 'react';
-import { isForStatement } from 'typescript';
 import Navigation from '../components/oraganisms/Navigation';
 
-interface Props {}
-
-const Profile = (props: Props) => {
+const Profile: React.FC = () => {
   const [auth, setAuth] = useState(true);
   return (
     <>
@@ -52,7 +46,7 @@ const Profile = (props: Props) => {
                 <Box w="100%" pos="relative">
                   <Flex direction="column" h="100%">
                     <Text>데이미언 루이스</Text>
-                    <Text color="custom.subText">
+                    <Text color="subText">
                       싱어송라이터, 시인
                     </Text>
                     <HStack>

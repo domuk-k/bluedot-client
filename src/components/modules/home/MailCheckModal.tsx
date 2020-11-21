@@ -11,10 +11,10 @@ import {
   Stack,
 } from '@chakra-ui/core';
 import { Field, Form, Formik } from 'formik';
-import mailCheckSchema from '../../utils/mailCheckSchema';
-import Input from '../atoms/Input';
-import SocialLoginButton from '../atoms/SocialButton';
-import InputErrorMessage from '../atoms/InputErrorMessage';
+import mailCheckSchema from '../../../utils/mailCheckSchema';
+import Input from '../../atoms/Input';
+import SocialLoginButton from '../../atoms/SocialButton';
+import InputErrorMessage from '../../atoms/InputErrorMessage';
 
 interface IMailCheckProps {
   setModalMode: React.Dispatch<React.SetStateAction<any>>;
@@ -55,11 +55,9 @@ const MailCheckModal: React.FC<IMailCheckProps> = ({
                   name="email"
                   value={values.email}
                   borderColor={
-                    errors.email
-                      ? 'custom.warn'
-                      : 'lightgrey'
+                    errors.email ? 'warn' : 'lightgrey'
                   }
-                  focusBorderColor="primary.800"
+                  focusBorderColor="primary"
                 />
                 {errors.email && (
                   <InputErrorMessage
@@ -69,13 +67,13 @@ const MailCheckModal: React.FC<IMailCheckProps> = ({
                 <Button
                   type="submit"
                   w="100%"
-                  bg="custom.cta"
+                  bg="primary"
                   color="white"
                   isDisabled={
                     isSubmitting || !!errors.email
                   }
                   _disabled={{ background: 'lightgrey' }}
-                  _hover={{ background: 'primary.400' }}
+                  _hover={{ background: 'primary' }}
                 >
                   이메일로 시작
                 </Button>
