@@ -22,13 +22,15 @@ const PostsList = (props: Props) => {
     mediaArt: false,
   });
 
-  const changeCategoryType = (e: any) => {
+  const changeCategoryType = (
+    e: React.MouseEvent<Element>
+  ) => {
     setType((state) => ({
       total: false,
       music: false,
       design: false,
       mediaArt: false,
-      [e.target.classList[0]]: true,
+      [(e.target as HTMLElement).classList[0]]: true,
     }));
   };
 

@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  chakra,
   Checkbox,
   Divider,
   InputGroup,
@@ -41,8 +42,13 @@ const SignUpModal: React.FC<ISignInModal> = (props) => {
   const [show, setShow] = React.useState(false);
   const handlePWshow = () => setShow(!show);
 
-  const handleClickCheck = (e: any) =>
-    setCheckedItems([e.target.checked, e.target.checked]);
+  const handleClickCheck = (
+    e: React.MouseEvent<HTMLButtonElement>
+  ) =>
+    setCheckedItems([
+      (e.target as HTMLInputElement).checked,
+      (e.target as HTMLInputElement).checked,
+    ]);
 
   return (
     <ModalContent>

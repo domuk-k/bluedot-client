@@ -11,11 +11,12 @@ import React, {
   useState,
 } from 'react';
 import { Redirect } from 'react-router-dom';
-import LoginButton from '../atoms/LoginButton';
+import NavPrimaryButton from '../atoms/NavPrimaryButton';
 import Logo from '../atoms/Logo';
 import NavList from '../atoms/NavList';
 import MailCheckModal from '../modules/home/MailCheckModal';
 import SignUpModal from '../modules/home/SignUpModal';
+import UserNavigation from '../modules/home/UserNavigation';
 
 enum ModalTypes {
   mailCheck,
@@ -24,6 +25,7 @@ enum ModalTypes {
 
 export default function Navigation(): ReactElement {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const auth = true;
   const [modal, setModalMode] = useState(
     ModalTypes['mailCheck']
   );
@@ -69,12 +71,18 @@ export default function Navigation(): ReactElement {
         className="nav-container"
         align="center"
         justify="space-between"
-        w="90vw"
+        w="85vw"
         m="auto"
       >
         <Logo />
         <NavList />
-        <LoginButton onClick={signInAndUp} />
+        {auth ? (
+          <UserNavigation />
+        ) : (
+          <NavPrimaryButton onClick={signInAndUp}>
+            로그인/회원가입
+          </NavPrimaryButton>
+        )}
 
         {isOpen && (
           <Modal
@@ -84,7 +92,6 @@ export default function Navigation(): ReactElement {
             onClose={onClose}
             isCentered
             preserveScrollBarGap
-            closeOnEsc
           >
             <ModalOverlay />
             {TypedModal(modal)}
